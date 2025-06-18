@@ -1,0 +1,162 @@
+/* === BASE GLOBAL === */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(33, 33, 33, 0.95);
+  background-color: #f5f5f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: #0055cc;
+  text-decoration: none;
+}
+a:hover {
+  color: #003399;
+}
+
+/* === CONTAINER ROOT === */
+#root {
+  max-width: 1280px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* === COMPONENTES REUTILIZABLES === */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* === CARDS === */
+.card {
+  padding: 2em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* === LOGOS DE VITE/REACT (opcional) === */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* === RESPONSIVE ADAPTATION === */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
+/* === PRODUCTOS LIST === */
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.producto-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.precio {
+  font-weight: bold;
+  color: #1565c0;
+  margin: 0.5rem 0;
+}
+.home-container {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.home-container p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+.home-logo {
+  width: 200px;
+  margin-top: 1.5rem;
+}
+.finalizar-btn {
+  margin-top: 1rem;
+  background-color: #0055a5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.finalizar-btn:hover {
+  background-color: #003c7a;
+}

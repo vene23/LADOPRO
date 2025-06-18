@@ -1,0 +1,11 @@
+.admin-container {
+  padding: 2rem;
+  background-color: #eef5ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.admin-container h2 {
+  color: #0d47a1;
+}
