@@ -1,9 +1,15 @@
 import { useAuth } from "../context/AuthContext";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 function RutaProtegida({ children }) {
-  const { isAuthenticated } = useAuth();
-  return isAuthenticated ? children : <Navigate to="/login" />;
+  const { user } = useAuth();
+  const location = useLocation();
+
+  if (!user) {
+    return <Navigate to="/login" state={{ from: location }} replace />;
+  }
+
+  return children;
 }
 
 export default RutaProtegida;

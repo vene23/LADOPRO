@@ -9,3 +9,13 @@
 .admin-container h2 {
   color: #0d47a1;
 }
+
+.card {
+  text-align: center;
+}
+
+.card button {
+  margin-top: 1rem;
+  background-color: #cc0000;
+  color: white;
+}

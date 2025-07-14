@@ -1,0 +1,56 @@
+/* === Estilos para Carrito.jsx === */
+
+.carrito-container {
+max-width: 800px;
+margin: 2rem auto;
+padding: 2rem;
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+text-align: left;
+}
+
+.carrito-lista {
+list-style: none;
+padding: 0;
+margin-bottom: 1rem;
+}
+
+.carrito-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+border-bottom: 1px solid #ddd;
+}
+
+.quitar-btn {
+background-color: #dc3545;
+color: white;
+border: none;
+padding: 0.5rem 1rem;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+
+.quitar-btn:hover {
+background-color: #c82333;
+}
+
+.finalizar-btn {
+background-color: #28a745;
+color: white;
+border: none;
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+display: block;
+margin: 2rem auto 0;
+}
+
+.finalizar-btn:hover {
+background-color: #218838;
+}
