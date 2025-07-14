@@ -118,6 +118,20 @@ Este proyecto está listo para escalar con una API real en la entrega final
 
 ## 📃 Autor y Curso
 
-Realizado por \[Venecia Calandrón] para el curso de ReactJS
+Realizado por **Venecia Calandrón** para el curso de ReactJS
 
+---
 
+## Enlace de Producción y Datos de Inicio de Sesión
+
+Puedes ver el proyecto en producción en el siguiente enlace:
+
+- [LaDoPro eCommerce (Versión Principal)](https://ladopro.vercel.app/)
+- [LaDoPro eCommerce (Versión Alternativa)](https://ladopro-venecias-projects.vercel.app/)
+
+---
+
+### **Inicio de sesión**:
+
+- **Usuario**: admin
+- **Contraseña**: 1234
